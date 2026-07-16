@@ -1,14 +1,14 @@
 ### Computer-Device-Recognition-System
 
 
-This Project utilizes AI to detect Keyboards, Mouses, Headphones, and Monitors. The reason i created this project was to play around with AI detection, and get more familiar with it, this could be used for a simple classification testing, or example.
+This Project utilizes AI to detect Keyboards, Mouses, Headphones, and Laptops. The reason i created this project was to play around with AI detection, and get more familiar with it, this could be used for a simple classification testing, or example.
 
 ### The Algorithm
 
 THis program uses detectnet and resnet -18 for this project. First, i used the image database from https://storage.googleapis.com/openimages/web/visualizer/index.html?set=train&type=detection&c=%2Fm%2F014j1m to download on my Jetson Orin. To do this i went to my jetson-inference directory by using "cd ~/jetson-inference/" in the terminal, then i went to the docker using "./docker/run.sh" in the terminal as well. From there, i navigated into the detection ssd folder by running "cd python/training/detection/ssd" in the docker. To download the specific images used for this project i ran the detection ssd section of the docker:
 
 python3 open_images_downloader.py --max-images=5000
---class names "Computer keyboard, Computer monitor, Computer mouse, Headphones"
+--class names "Computer keyboard, Laptop, Computer mouse, Headphones"
 --data=data/items
 
 Once the images were downloaded, i trained my model using this code:
