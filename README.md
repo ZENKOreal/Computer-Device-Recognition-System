@@ -13,7 +13,7 @@ python3 open_images_downloader.py --max-images=2500
 
 Once the images were downloaded, i trained my model using this code:
 
-python3 train_ssd.py --data=data/items --model-dir=models/person --batch-size=4 --epochs=50
+python3 train_ssd.py --data=data/items --model-dir=models/items --batch-size=4 --epochs=50
 
 this code will train the ai.. note: (it can take a while!)
 
