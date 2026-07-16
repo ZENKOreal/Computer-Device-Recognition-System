@@ -39,3 +39,6 @@ To run this this AI detection of everday technology hardware, a few steps must b
 8. Use detectnet to load our cudtom SSD-Mobilenet ONNX model by using the following code in the docker: detectnet --model=models/items/ssd-mobilenet.onnx --labels=models/items/labels.txt --input blob=input_0 -- output-cvg=scores --output-bbox=boxes data/computer_video.mp4 data/output.mp4
 
 for each video change the output to the respective number!
+
+
+Video: https://drive.google.com/file/d/1fof6o0Y40oOo9Ru9D-WnOpYhu9i-QPFu/view?usp=sharing
